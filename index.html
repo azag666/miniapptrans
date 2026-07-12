@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>📸 Perfil Vitória ✨ | Checkout Privado</title>
     
+    <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     
+    <!-- Tailwind & FontAwesome -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
+    <!-- Babel & React Import Map -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="importmap">
     {
@@ -23,6 +26,7 @@
     }
     </script>
 
+    <!-- Script Clarity Atualizado -->
     <script type="text/javascript">
         (function(c,l,a,r,i,t,y){
             c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -35,6 +39,7 @@
     </script>
     <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1817379038816925&ev=PageView&noscript=1"/></noscript>
 
+    <!-- Configuração do Tailwind -->
     <script>
         tailwind.config = {
             theme: {
@@ -52,6 +57,7 @@
         }
     </script>
 
+    <!-- Estilos CSS -->
     <style>
         ::-webkit-scrollbar { width: 0px; background: transparent; }
         @keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
@@ -75,8 +81,14 @@
 
 <body class="bg-black text-white font-sans antialiased selection:bg-of-blue selection:text-white transition-colors duration-300">
 
+    <!-- ============================================== -->
+    <!-- TELA 1: INSTAGRAM COMPLETO (REACT APP)         -->
+    <!-- ============================================== -->
     <div id="root" class="block w-full"></div>
 
+    <!-- ============================================== -->
+    <!-- TELA 2: CHECKOUT HOTTRACK (NOSSO DESENVOLVIMENTO) -->
+    <!-- ============================================== -->
     <div id="checkout-view" class="hidden w-full flex-col justify-center items-center relative min-h-screen text-of-text bg-gray-100">
         <div class="w-full max-w-md bg-white min-h-screen relative shadow-2xl flex flex-col overflow-hidden text-left">
             
@@ -95,7 +107,7 @@
                     <img src="https://i.postimg.cc/QNWh7hRJ/download.gif" alt="Capa" class="h-32 w-full object-cover object-center bg-gray-200" fetchpriority="high" decoding="async">
                     <div class="absolute -bottom-10 left-4">
                         <div class="w-20 h-20 rounded-full border-4 border-white bg-gray-200 overflow-hidden relative shadow-sm">
-                            <img src="https://pub-28caac552342447180cf13cbc92a202d.r2.dev/insta/5062470728120208710.jpg" alt="Vitoria" class="w-full h-full object-cover">
+                            <img src="https://pub-28caac552342447180cf13cbc92a202d.r2.dev/HMVggT4X0AAq11y.jpeg" alt="Vitoria" class="w-full h-full object-cover">
                         </div>
                     </div>
                 </div>
@@ -168,7 +180,7 @@
                             <div class="absolute top-3 right-3 bg-red-600 text-white text-xs font-black px-3 py-1.5 rounded-lg animate-pulse z-20 uppercase tracking-wider flex items-center gap-1 shadow-lg">
                                 <i class="fa-solid fa-fire"></i> +100 Arquivos Vazados
                             </div>
-                            <img src="https://i.postimg.cc/59FpjxZN/download-(1).gif" alt="Preview Acervo" class="w-full h-auto object-cover opacity-90">
+                            <img src="https://i.postimg.cc/nc3xbr79/download.gif" alt="Preview Acervo" class="w-full h-auto object-cover opacity-90">
                             <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/90 via-black/50 to-transparent p-4 pt-12">
                                 <div class="flex items-center gap-3">
                                     <div class="w-10 h-10 bg-of-blue/20 backdrop-blur-md rounded-full flex items-center justify-center text-of-blue border border-of-blue/50">
@@ -306,6 +318,9 @@
         </div>
     </div>
 
+    <!-- ============================================== -->
+    <!-- SCRIPT REACT (INSTAGRAM APP COMPLETO)          -->
+    <!-- ============================================== -->
     <script type="text/babel" data-type="module">
         import React, { useState, useEffect } from 'react';
         import { createRoot } from 'react-dom/client';
@@ -317,11 +332,11 @@
         const PROFILE_DATA = {
           username: "vitoriajacobot",
           name: "Vitória 💖✨",
-          avatar: "https://pub-28caac552342447180cf13cbc92a202d.r2.dev/insta/5062470728120208711.jpg",
+          avatar: "https://pub-28caac552342447180cf13cbc92a202d.r2.dev/HMVggT4X0AAq11y.jpeg",
           stats: { posts: "5", followers: "18.7K", following: "123" },
           link: { url: "javascript:void(0)", display: "onlyfans.com/vitoriaaa" },
           story: {
-            image: "https://pub-28caac552342447180cf13cbc92a202d.r2.dev/insta/705567866_18564360004067387_227037815207924898_n.jpg",
+            image: "https://pub-28caac552342447180cf13cbc92a202d.r2.dev/5087222942474637133.jpg",
             linkText: "Meus videos 🔞",
             linkUrl: "javascript:void(0)"
           },
@@ -561,6 +576,9 @@
         root.render(<App />);
     </script>
 
+    <!-- ============================================== -->
+    <!-- SCRIPT VANILLA (CHECKOUT APP - HOTTRACK API)   -->
+    <!-- ============================================== -->
     <script>
         // Configurações HotTrack
         const HOTTRACK_API_URL = 'https://hot-track.com';
